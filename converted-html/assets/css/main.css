@@ -6948,7 +6948,7 @@ h3 {
 
 .container-main {
   background-color: #a3a60d;
-  display: flex;
+  display: inline-block;
 }
 .container-main .wrapper-content {
   position: relative;
@@ -6963,6 +6963,7 @@ h3 {
   background-color: #fff;
   padding: 50px;
   border-top: none;
+  display: inline-block;
 }
 @media (min-width: 768px) {
   .container-main .wrapper-content {
@@ -7021,7 +7022,7 @@ html, body {
 body {
   background: url("../images/bg.jpg") #75c7b9;
   background-repeat: none;
-  padding: 15px 0px;
+  padding: 0px 0px;
 }
 
 header {
@@ -7048,7 +7049,7 @@ header img {
   }
 
   body {
-    padding: 50px;
+    padding: 0px;
   }
 }
 @media (min-width: 992px) {

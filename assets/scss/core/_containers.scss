@@ -25,7 +25,7 @@
 .container-main {
 	background-color: $codina-orange;
 
-	display: flex;
+	display: inline-block;
 
 	.wrapper-content {
 		position: relative;
@@ -45,6 +45,7 @@
 			padding: 50px;
 			// border: 15px solid #c3d62e;
 			border-top: none;
+			display: inline-block;
 		}
 	}
 
