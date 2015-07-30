@@ -1,0 +1,76 @@
+{% block content %}
+
+<div class="container">
+	<div class="wrapper-main shadow">
+
+		<!-- HEADER -->
+		{% include "header" %}
+
+		<!-- MAIN -->
+		<div class="container-main">
+			<!-- SIDEBAR -->
+			<div class="col-sm-3">
+				{% include "navigation" %}
+			</div>
+			<!-- CONTENT -->
+			<div class="col-sm-9">
+				<div class="wrapper-content shadow">
+					<header class="header-image-container">
+						<img src="{{ "image-overlay.png" | asset_url }}" class="img-responsive image-overlay hidden-xs">
+						<img src="http://placehold.it/1920x500" class="img-responsive">
+					</header>
+					<div class="container-content">
+						<h2>The right properties. The right time. The right partner.</h2>
+						<p>You can find Codina Partners all over South Florida. Visit some of our proudest success stories here.</p>
+						
+						<!-- Downtown Doral -->
+						<div class="row img-content">
+							<div class="col-sm-4">
+								<a href="/projects/detail">
+									<img src="http://placehold.it/200x150" class="img-responsive">
+								</a>
+							</div>
+							<div class="col-sm-8">
+								<h3>Downtown Doral</h3>
+								<p>Your new hometown. Florida's largest and most exciting mixed-use development &mdash; a thriving city-center of 2,800 residences. 100,000 square feet of retail and more than 1,000,000 square feet of work-close-to-home office space.</p>
+							</div>
+						</div>
+						
+						<!-- Monterra -->
+						<div class="row img-content">
+							<div class="col-sm-4">
+								<a href="/projects/detail">
+									<img src="http://placehold.it/200x150" class="img-responsive">
+								</a>
+							</div>
+							<div class="col-sm-8">
+								<h3>Monterra</h3>
+								<p>Truly "Something Special" in Cooper City, Florida &mdash; a masterplanned community featuring 1,500 residential units that rambles over 500 acres in one of the most live-friendly corners of Broward County.</p>
+							</div>
+						</div>
+
+						<!-- Yellow Bluff Landing -->
+						<div class="row img-content">
+							<div class="col-sm-4">
+								<a href="/projects/detail">
+									<img src="http://placehold.it/200x150" class="img-responsive">
+								</a>
+							</div>
+							<div class="col-sm-8">
+								<h3>Yellow Bluff Landing</h3>
+								<p>680-residence haven in Jacksonville, Florida featuring a variety of homes from some of the region's most experienced and sought-after builders, including D.R. Horton, Richmond American Homes and Lennar.</p>
+							</div>
+						</div>
+
+					</div>
+
+					{% include "copyright" %}
+
+				</div> <!-- /wrapper-content -->
+
+			</div>
+		</div> <!-- /container-main -->
+	</div>
+</div>
+
+{% endblock %}

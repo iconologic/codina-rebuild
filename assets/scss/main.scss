@@ -1,0 +1,86 @@
+/*********************************************************
+
+Project Name: Website Bootstrap boilerplate
+Project Description:
+File Name: Master Sass file
+Author: Spencer Bigum, Casey Jardin
+Author URL:
+Version: 1.0.0
+
+*********************************************************/
+// ==========================================================================
+// Vendor - framework libraries
+// Boostrap
+// ==========================================================================
+@import "vendor/index";
+
+
+// ==========================================================================
+// Utilities
+// Config, Helpers, Mixins
+// ==========================================================================
+@import "core/index";
+@import "core/base";
+@import "core/navigation";
+@import "core/containers";
+
+// Modules
+@import "modules/index";
+
+
+html, body {
+	height: 100%;
+}
+
+body{
+   background: url('../images/bg.jpg') $body-bg;
+   background-repeat: none;
+   padding: 15px 0px;
+}
+
+
+header {
+	background-color: $codina-blue;
+}
+
+header img {
+	// border: 15px solid #77c6b3;
+	border-bottom: none;
+}
+
+.image-overlay {
+	
+}
+
+.logo {
+	max-width: 240px;
+}
+
+@media (min-width: $screen-xs) {
+	.logo {
+		margin: 0 auto;
+	}
+}
+
+@media (min-width: $screen-sm) {
+	.logo {
+		max-width: 145px;
+		margin: 0;
+	}
+
+	body {
+		padding: 50px;
+	}
+}
+
+@media (min-width: $screen-md) {
+	.logo {
+		max-width: 200px;
+	}
+}
+
+@media (min-width: $screen-lg) {
+	.logo {
+		max-width: 240px;
+	}
+}

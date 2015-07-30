@@ -1,0 +1,42 @@
+{% block content %}
+
+<div class="container">
+	<div class="wrapper-main shadow">
+
+		<!-- HEADER -->
+		{% include "header" %}
+
+		<!-- MAIN -->
+		<div class="container-main">
+			<!-- SIDEBAR -->
+			<div class="col-sm-3">
+				{% include "navigation" %}
+			</div>
+			<!-- CONTENT -->
+			<div class="col-sm-9">
+				<div class="wrapper-content shadow">
+					<header class="header-image-container">
+						<img src="{{ "image-overlay.png" | asset_url }}" class="img-responsive image-overlay hidden-xs">
+						<img src="http://placehold.it/1920x500" class="img-responsive">
+					</header>
+
+					
+					<div class="container-content">
+						<h1>About Us</h1>
+						
+						<p>Codina Partners is a boutique investment and development firm formed by the Codina family in January 2010. Privately owned, with decades of local experience, a legacy of successul South Florida connection and a dedication to the development and success of the souther region of the Sunshine State, our expertise as a small, agile firm with big insight makes us one of Florida's firms to watch &mdash; the right people, the right properties, at the right time.</p>
+
+						<p><a href="/contact/index">Contact us</a>, read about our projects, and get to know our partners, then join us. It's a great time to be an investor.</p>
+
+					</div>
+
+					{% include "copyright" %}
+
+				</div> <!-- /wrapper-content -->
+
+			</div>
+		</div> <!-- /container-main -->
+	</div>
+</div>
+
+{% endblock %}

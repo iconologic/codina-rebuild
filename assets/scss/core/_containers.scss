@@ -1,0 +1,101 @@
+// CONTAINERS
+// ========================
+.container-header {
+	padding: 50px;
+	background: url('../images/header-overlay.png') #0d7c86;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+
+	@media (min-width: $screen-sm) {
+		max-height: 138px;
+		padding-top: 30px;
+	}
+
+	@media (min-width: $screen-md) {
+		max-height: 184px;
+	}
+
+	@media (min-width: $screen-lg) {
+		min-height: 224px;
+	}
+}
+
+
+.container-main {
+	background-color: $codina-orange;
+
+	display: flex;
+
+	.wrapper-content {
+		position: relative;
+		top: 0px;
+		border: 15px solid rgba(255,255,255,.35);
+
+		.header-image-container {
+			
+			.image-overlay {
+				position: absolute;
+				width: 100%;
+			}
+		}
+
+		.container-content {
+			background-color: #fff;
+			padding: 50px;
+			// border: 15px solid #c3d62e;
+			border-top: none;
+		}
+	}
+
+	@media (min-width: $screen-sm) {
+		.wrapper-content {
+			top: -120px;
+		}
+
+		.image-overlay {
+			top: 88px;
+		}
+	}
+
+	@media (min-width: $screen-md) {
+		.wrapper-content {
+			top: -163px;
+		}
+
+		.image-overlay {
+			top: 121px;
+		}
+	}
+
+	@media (min-width: $screen-lg) {
+		.wrapper-content {
+			top: -203px;
+		}
+
+		.image-overlay {
+			top: 153px;
+		}
+	}
+}
+
+.img-content {
+	margin: 10px 0;
+}
+
+// Master Media Query
+
+@media (min-width: $screen-sm) {
+	.container-main {
+		padding: 50px;
+		padding-top: 0;
+	}
+}
+
+@media (min-width: $screen-md) {
+	
+}
+
+@media (min-width: $screen-lg) {
+	
+}

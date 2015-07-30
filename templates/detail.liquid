@@ -1,0 +1,58 @@
+{% block content %}
+
+<div class="container">
+	<div class="wrapper-main shadow">
+
+		<!-- HEADER -->
+		{% include "header" %}
+
+		<!-- MAIN -->
+		<div class="container-main">
+			<!-- SIDEBAR -->
+			<div class="col-sm-3">
+				{% include "navigation" %}
+			</div>
+			<!-- CONTENT -->
+			<div class="col-sm-9">
+				<div class="wrapper-content shadow">
+					
+					<div class="container-content">
+						<h1>Headline</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa esse animi eveniet provident cum deserunt obcaecati nihil, perferendis sapiente.</p>
+						
+						<!-- Image + Text -->
+						<div class="row img-content">
+							<div class="col-sm-4">
+								<img src="http://placehold.it/200x150" class="img-responsive">
+							</div>
+							<div class="col-sm-8">
+								<h3>Content Block -- Image + Text</h3>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, est eveniet eligendi, praesentium eos unde iusto. Vitae dolorum quidem nostrum suscipit laborum, officia excepturi est voluptates sequi iste cum dolores!
+							</div>
+						</div>
+
+						<h2>Secondary Headline</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi temporibus doloremque ratione labore minima, eum beatae ad dignissimos quisquam distinctio qui eveniet exercitationem facere inventore unde optio ab, provident perspiciatis.</p>
+
+						<!-- Image + Text -->
+						<div class="row img-content">
+							<div class="col-sm-4">
+								<img src="http://placehold.it/200x150" class="img-responsive">
+							</div>
+							<div class="col-sm-8">
+								<h3>Content Block -- Image + Text</h3>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, est eveniet eligendi, praesentium eos unde iusto. Vitae dolorum quidem nostrum suscipit laborum, officia excepturi est voluptates sequi iste cum dolores!
+							</div>
+						</div>
+					</div>
+
+					{% include "copyright" %}
+
+				</div> <!-- /wrapper-content -->
+
+			</div>
+		</div> <!-- /container-main -->
+	</div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,24 @@
+// ==========================================================================
+// Global Base Settings override
+// ==========================================================================
+
+// Typography
+h1 {
+	font-size: 2.2em;
+}
+
+h2 { 
+	font-size: 1.6em;
+}
+
+h3 { 
+	font-size: 1.3em;
+	color: $codina-gray;
+	text-transform: uppercase;
+	margin-top: 0;
+}
+
+.contact-info {
+	color: #fff;
+	padding-right: 36px;
+}

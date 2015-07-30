@@ -1,0 +1,45 @@
+{% block content %}
+
+<div class="container">
+	<div class="wrapper-main shadow">
+
+		<!-- HEADER -->
+		{% include "header" %}
+
+		<!-- MAIN -->
+		<div class="container-main">
+			<!-- SIDEBAR -->
+			<div class="col-sm-3">
+				{% include "navigation" %}
+			</div>
+			<!-- CONTENT -->
+			<div class="col-sm-9">
+				<div class="wrapper-content shadow">
+					
+					<div class="container-content">
+						
+						<!-- Image + Text -->
+						<div class="row img-content">
+							<div class="col-sm-4">
+								<img src="{{ "armando-codina.jpg" | asset_url }}" class="img-responsive">
+							</div>
+							<div class="profile">
+								<h1 class="no-margin">Armando Codina</h1>
+								<h4>Founder and Principal</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea molestiae unde beatae sit atque tempore modi magnam corrupti sequi ab veritatis inventore repellendus nulla exercitationem, rerum reiciendis non. Consectetur, officia!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste asperiores non eveniet accusantium error sapiente temporibus rerum facere iure magni facilis consequuntur, atque, repellendus dolorum ipsam, laboriosam nisi vel nihil?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel aspernatur laboriosam, eos repellat ipsam asperiores, est voluptatibus, consectetur necessitatibus quia natus, doloribus rem repudiandae harum maiores similique. Magnam, possimus, quisquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid autem et, consequuntur pariatur magnam, fuga voluptas a? Mollitia distinctio, rerum, ratione necessitatibus dolor odio facilis molestias accusamus porro dolores sapiente.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium odit similique perferendis. Earum porro molestiae, distinctio accusantium ipsa quam ipsum commodi nostrum obcaecati modi atque, voluptatum dolor ullam sint, deserunt?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex minus maxime corrupti, architecto obcaecati! Minus sequi odit, corporis cumque. Fugiat ea inventore quod aut accusantium repudiandae ipsa officiis, mollitia saepe!</p>
+								<a href="/people/index">back to team</a>
+							</div>
+						</div>
+					</div>
+
+					{% include "copyright" %}
+
+				</div> <!-- /wrapper-content -->
+
+			</div>
+		</div> <!-- /container-main -->
+	</div>
+</div>
+
+{% endblock %}
