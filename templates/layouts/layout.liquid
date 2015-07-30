@@ -8,7 +8,7 @@
 
         <meta name="viewport" content="width=device-width">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-        
+
         <!-- Styles -->
         {{ "main.css" | asset_url | stylesheet_tag }}
         <!-- Style block allowing child pages to inject their own styles -->
@@ -16,7 +16,7 @@
     </head>
     <body>
         <div id="wrapper">
-            
+
             <!-- Content block, child page inject content -->
             {% block content %}{% endblock %}
 
@@ -24,8 +24,9 @@
         <!-- Script block allowing child pages to inject their own scripts -->
         {{ "jquery.min.js" | asset_url | script_tag }}
         {{ "bootstrap.js" | asset_url | script_tag }}
+        {{ "nav.js" | asset_url | script_tag }}
         {{ "main.js" | asset_url | script_tag }}
         {% block scripts %}{% endblock %}
-        
+
     </body>
 </html>
