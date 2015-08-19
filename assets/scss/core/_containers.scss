@@ -1,7 +1,7 @@
 // CONTAINERS
 // ========================
 .container-header {
-	padding: 50px;
+	padding: 15px 0px;
 	background: url('../images/header-overlay.png') #0d7c86;
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -9,7 +9,7 @@
 
 	@media (min-width: $screen-sm) {
 		max-height: 138px;
-		padding-top: 30px;
+		padding: 30px 50px 50px;
 	}
 
 	@media (min-width: $screen-md) {
@@ -18,6 +18,24 @@
 
 	@media (min-width: $screen-lg) {
 		min-height: 224px;
+	}
+
+	#hamburger {
+		position: absolute;
+		top: 0px; 
+		right: 35px;
+		color: #fff;
+
+		i {
+			position: relative;
+			top: 5px;
+			margin-left: 10px;
+		}
+
+		&:before {
+			content: 'MENU';
+			font-size: 14px;
+		}
 	}
 }
 
@@ -31,6 +49,12 @@
 		position: relative;
 		top: 0px;
 		border: 15px solid rgba(255,255,255,.35);
+		margin-top: 15px;
+
+		@media (min-width: $screen-sm) {
+			margin-top: 0;
+		}
+
 
 		.header-image-container {
 			
@@ -42,10 +66,22 @@
 
 		.container-content {
 			background-color: #fff;
-			padding: 50px;
+			padding: 15px;
 			// border: 15px solid #c3d62e;
 			border-top: none;
 			display: inline-block;
+
+			@media (min-width: $screen-sm) {
+				
+			}
+
+			@media (min-width: $screen-md) {
+				padding: 25px;
+			}
+
+			@media (min-width: $screen-lg) {
+				padding: 50px;
+			}
 		}
 	}
 

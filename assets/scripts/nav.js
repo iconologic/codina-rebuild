@@ -35,7 +35,7 @@ jQuery(document).ready(function($){
     			navigation.appendTo('#navDesktop');
     		} else {
     			navigation.detach();
-    			navigation.insertBefore('.logo');
+    			navigation.insertAfter('.logo');
     		}
 	}
 

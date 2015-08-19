@@ -1,3 +1,9 @@
+#navDesktop {
+  a { 
+    color: #fff;
+  }
+}
+
 .nav-side-menu {
 
 }
@@ -10,11 +16,16 @@
 .nav-side-menu li {
   list-style: none;
   padding: 10px 18px 10px 0;
-  margin: 0px;
+  margin: 0px 15px;
   cursor: pointer;
-  text-align: right;
+  text-align: left;
   text-transform: uppercase;
   font-size: 18px;
+
+  @media (min-width: $screen-sm) {
+    text-align: right;
+    margin: 0;
+  }
 }
 
 .nav-side-menu li:first-child {

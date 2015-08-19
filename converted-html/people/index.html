@@ -8,7 +8,7 @@
 
         <meta name="viewport" content="width=device-width">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-        
+
         <!-- Styles -->
         <link href="../assets/css/main.min.css" rel="stylesheet" type="text/css" media="all" />
         <!-- Style block allowing child pages to inject their own styles -->
@@ -16,13 +16,17 @@
     </head>
     <body>
         <div id="wrapper">
-            
+
             <!-- Content block, child page inject content -->
             
 <div class="container">
 	<div class="wrapper-main shadow">
 		<!-- HEADER -->
 		<div class="container-header">
+	<!-- hamburger -->
+	<div id="hamburger" class="visible-xs">
+		<i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+	</div>
 	<!-- logo -->
 	<div class="logo">
 		<a href="../index.html">
@@ -33,7 +37,7 @@
 		<!-- MAIN -->
 		<div class="container-main">
 			<!-- SIDEBAR -->
-			<div class="col-sm-3">
+			<div id="navDesktop" class="col-sm-3">
 				<!-- <ul class="main-sidebar-nav">
 	<li>home</li>
 	<li>projects</li>
@@ -42,8 +46,6 @@
 </ul> -->
 
 <div class="nav-side-menu">
-
-  <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
 
 	<div class="menu-list">
 	  <ul id="menu-content" class="menu-content collapse navbar-collapse">
@@ -54,7 +56,7 @@
 			<li><a href="#">Contact</a></li>
 	  </ul>
 
-	  <p class="contact-info text-right">
+	  <p class="contact-info text-right hidden-xs">
 	  	135 San Lorenzo Ave
 	  	<br>Suite 750
 	  	<br>Coral Gables, FL 33146
@@ -64,7 +66,6 @@
 	  </p>
 
 	</div>
-
 
 </div>
 
@@ -79,151 +80,176 @@
 					<div class="container-content">
 						<h2>The right properties. The right time. The right partner.</h2>
 						<p>Our partners and trusted associates have served the South Florida marketplace for a combined several decades. Get to know us here.</p>
-						<div class="row img-content team col-sm-6">
-							<div class="col-sm-6">
-								<a href="../people/detail.html">
-									<img src="../assets/images/people/thumbnail/armando-codina.jpg" class="img-responsive">
-								</a>
+						<div id="team-container" class="row">
+							<div class="img-content team col-sm-6">
+								<div class="col-sm-6 no-padding">
+									<a href="../people/detail.html">
+										<img src="../assets/images/people/thumbnail/armando-codina.jpg" class="img-responsive">
+									</a>
+								</div>
+								<div class="col-sm-6">
+									<h3>Armando Codina</h3>
+									<p>Executive Chairman</p>
+								</div>
 							</div>
-							<div class="col-sm-6 no-padding">
-								<h3>Armando Codina</h3>
-								<p>Founder and Principal</p>
+							<div class="img-content team col-sm-6">
+								<div class="col-sm-6 no-padding">
+									<a href="../people/detail.html">
+										<img src="../assets/images/people/thumbnail/ana-marie-codina.jpg" class="img-responsive">
+									</a>
+								</div>
+								<div class="col-sm-6">
+									<h3>Ana Codina Barlick</h3>
+									<p>Chief Executive Officer</p>
+								</div>
 							</div>
-						</div>
-						<div class="row img-content team col-sm-6">
-							<div class="col-sm-6">
-								<a href="../people/detail.html">
-									<img src="../assets/images/people/thumbnail/ana-marie-codina.jpg" class="img-responsive">
-								</a>
+							<div class="img-content team col-sm-6">
+								<div class="col-sm-6 no-padding">
+									<a href="../people/detail.html">
+										<img src="http://placehold.it/150x150" class="img-responsive">
+									</a>
+								</div>
+								<div class="col-sm-6">
+									<h3>K. Lawrence Gragg, Esq.</h3>
+									<p>President &amp; COO</p>
+								</div>
 							</div>
-							<div class="col-sm-6 no-padding">
-								<h3>Ana Codina Barlick</h3>
-								<p>Director of Development</p>
+							<div class="img-content team col-sm-6">
+								<div class="col-sm-6 no-padding">
+									<a href="../people/detail.html">
+										<img src="../assets/images/people/thumbnail/rafael-romero.jpg" class="img-responsive">
+									</a>
+								</div>
+								<div class="col-sm-6">
+									<h3>Rafael Romero</h3>
+									<p>Chief Financial Officer</p>
+								</div>
 							</div>
-						</div>
-						<div class="row img-content team col-sm-6">
-							<div class="col-sm-6">
-								<a href="../people/detail.html">
-									<img src="../assets/images/people/thumbnail/alex-codina.jpg" class="img-responsive">
-								</a>
+							<div class="img-content team col-sm-6">
+								<div class="col-sm-6 no-padding">
+									<a href="../people/detail.html">
+										<img src="http://placehold.it/150x150" class="img-responsive">
+									</a>
+								</div>
+								<div class="col-sm-6">
+									<h3>Joe Jimenez</h3>
+									<p>Vice President of Legal and Regulatory Affairs</p>
+								</div>
 							</div>
-							<div class="col-sm-6 no-padding">
-								<h3>Alex Codina</h3>
-								<p>Title</p>
+							<div class="img-content team col-sm-6">
+								<div class="col-sm-6 no-padding">
+									<a href="../people/detail.html">
+										<img src="../assets/images/people/thumbnail/oswaldo-betancourt.jpg" class="img-responsive">
+									</a>
+								</div>
+								<div class="col-sm-6">
+									<h3>Oswaldo Betancourt</h3>
+									<p>VP, Development of Construction</p>
+								</div>
 							</div>
-						</div>
-						<div class="row img-content team col-sm-6">
-							<div class="col-sm-6">
-								<a href="../people/detail.html">
-									<img src="../assets/images/people/thumbnail/ali-dominguez.jpg" class="img-responsive">
-								</a>
+							<div class="img-content team col-sm-6">
+								<div class="col-sm-6 no-padding">
+									<a href="../people/detail.html">
+										<img src="../assets/images/people/thumbnail/ali-dominguez.jpg" class="img-responsive">
+									</a>
+								</div>
+								<div class="col-sm-6">
+									<h3>Ali E. Dominguez</h3>
+									<p>Director of Accounting</p>
+								</div>
 							</div>
-							<div class="col-sm-6 no-padding">
-								<h3>Ali E. Dominguez</h3>
-								<p>Controller</p>
+							<div class="img-content team col-sm-6">
+								<div class="col-sm-6 no-padding">
+									<a href="../people/detail.html">
+										<img src="../assets/images/people/thumbnail/mark-codina.jpg" class="img-responsive">
+									</a>
+								</div>
+								<div class="col-sm-6">
+									<h3>Mark Julian</h3>
+									<p>Director of Finance</p>
+								</div>
 							</div>
-						</div>
-						<div class="row img-content team col-sm-6">
-							<div class="col-sm-6">
-								<a href="../people/detail.html">
-									<img src="../assets/images/people/thumbnail/angel-codina.jpg" class="img-responsive">
-								</a>
+							<div class="img-content team col-sm-6">
+								<div class="col-sm-6 no-padding">
+									<a href="../people/detail.html">
+										<img src="../assets/images/people/thumbnail/gus-minguez.jpg" class="img-responsive">
+									</a>
+								</div>
+								<div class="col-sm-6">
+									<h3>Gus Minguez</h3>
+									<p>Director of Construction</p>
+								</div>
 							</div>
-							<div class="col-sm-6 no-padding">
-								<h3>Angel Codina</h3>
-								<p>Title</p>
+							<div class="img-content team col-sm-6">
+								<div class="col-sm-6 no-padding">
+									<a href="../people/detail.html">
+										<img src="../assets/images/people/thumbnail/angel-codina.jpg" class="img-responsive">
+									</a>
+								</div>
+								<div class="col-sm-6">
+									<h3>Angel Acosta</h3>
+									<p>Construction Manager</p>
+								</div>
 							</div>
-						</div>
-						<div class="row img-content team col-sm-6">
-							<div class="col-sm-6">
-								<a href="../people/detail.html">
-									<img src="../assets/images/people/thumbnail/gennipher-codina.jpg" class="img-responsive">
-								</a>
+							<div class="img-content team col-sm-6">
+								<div class="col-sm-6 no-padding">
+									<a href="../people/detail.html">
+										<img src="../assets/images/people/thumbnail/alex-codina.jpg" class="img-responsive">
+									</a>
+								</div>
+								<div class="col-sm-6">
+									<h3>Alexandria Iglesias</h3>
+									<p>Project Manager</p>
+								</div>
 							</div>
-							<div class="col-sm-6 no-padding">
-								<h3>Gennipher Codina</h3>
-								<p>Title</p>
+							<div class="img-content team col-sm-6">
+								<div class="col-sm-6 no-padding">
+									<a href="../people/detail.html">
+										<img src="../assets/images/people/thumbnail/raul-codina.jpg" class="img-responsive">
+									</a>
+								</div>
+								<div class="col-sm-6">
+									<h3>Raul De Moya</h3>
+									<p>Construction Manager</p>
+								</div>
 							</div>
-						</div>
-						<div class="row img-content team col-sm-6">
-							<div class="col-sm-6">
-								<a href="../people/detail.html">
-									<img src="../assets/images/people/thumbnail/gus-minguez.jpg" class="img-responsive">
-								</a>
+							<div class="img-content team col-sm-6">
+								<div class="col-sm-6 no-padding">
+									<a href="../people/detail.html">
+										<img src="../assets/images/people/thumbnail/rodrigo-codina.jpg" class="img-responsive">
+									</a>
+								</div>
+								<div class="col-sm-6">
+									<h3>rodrigo carrillo</h3>
+									<p>Construction Manager</p>
+								</div>
 							</div>
-							<div class="col-sm-6 no-padding">
-								<h3>Gus Minguez</h3>
-								<p>Title</p>
+							<div class="img-content team col-sm-6">
+								<div class="col-sm-6 no-padding">
+									<a href="../people/detail.html">
+										<img src="../assets/images/people/thumbnail/ruth-codina.jpg" class="img-responsive">
+									</a>
+								</div>
+								<div class="col-sm-6">
+									<h3>ruth lugo</h3>
+									<p>office manager</p>
+								</div>
 							</div>
-						</div>
-						<div class="row img-content team col-sm-6">
-							<div class="col-sm-6">
-								<a href="../people/detail.html">
-									<img src="../assets/images/people/thumbnail/mark-codina.jpg" class="img-responsive">
-								</a>
-							</div>
-							<div class="col-sm-6 no-padding">
-								<h3>Mark Codina</h3>
-								<p>Title</p>
-							</div>
-						</div>
-						<div class="row img-content team col-sm-6">
-							<div class="col-sm-6">
-								<a href="../people/detail.html">
-									<img src="../assets/images/people/thumbnail/oswaldo-betancourt.jpg" class="img-responsive">
-								</a>
-							</div>
-							<div class="col-sm-6 no-padding">
-								<h3>Oswaldo Betancourt</h3>
-								<p>Title</p>
-							</div>
-						</div>
-						<div class="row img-content team col-sm-6">
-							<div class="col-sm-6">
-								<a href="../people/detail.html">
-									<img src="../assets/images/people/thumbnail/rafael-romero.jpg" class="img-responsive">
-								</a>
-							</div>
-							<div class="col-sm-6 no-padding">
-								<h3>Rafael Romero</h3>
-								<p>Title</p>
-							</div>
-						</div>
-						<div class="row img-content team col-sm-6">
-							<div class="col-sm-6">
-								<a href="../people/detail.html">
-									<img src="../assets/images/people/thumbnail/raul-codina.jpg" class="img-responsive">
-								</a>
-							</div>
-							<div class="col-sm-6 no-padding">
-								<h3>raul Codina</h3>
-								<p>Title</p>
-							</div>
-						</div>
-						<div class="row img-content team col-sm-6">
-							<div class="col-sm-6">
-								<a href="../people/detail.html">
-									<img src="../assets/images/people/thumbnail/rodrigo-codina.jpg" class="img-responsive">
-								</a>
-							</div>
-							<div class="col-sm-6 no-padding">
-								<h3>rodrigo Codina</h3>
-								<p>Title</p>
-							</div>
-						</div>
-						<div class="row img-content team col-sm-6">
-							<div class="col-sm-6">
-								<a href="../people/detail.html">
-									<img src="../assets/images/people/thumbnail/ruth-codina.jpg" class="img-responsive">
-								</a>
-							</div>
-							<div class="col-sm-6 no-padding">
-								<h3>ruth Codina</h3>
-								<p>Title</p>
+							<div class="img-content team col-sm-6">
+								<div class="col-sm-6 no-padding">
+									<a href="../people/detail.html">
+										<img src="../assets/images/people/thumbnail/gennipher-codina.jpg" class="img-responsive">
+									</a>
+								</div>
+								<div class="col-sm-6">
+									<h3>Gennipher Perdomo</h3>
+									<p>Marketing Coordinator</p>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="copyright">
+					<!-- TODO: Mobile Copyright -->
+<div class="copyright hidden-xs">
 	<p>Copyright <span id="year"></span> Codina Partners. All rights reserved.</p>
 </div>
 				</div> <!-- /wrapper-content -->
@@ -237,8 +263,9 @@
         <!-- Script block allowing child pages to inject their own scripts -->
         <script src="../assets/scripts/jquery.min.js"></script>
         <script src="../assets/scripts/bootstrap.min.js"></script>
+        <script src="../assets/scripts/nav.min.js"></script>
         <script src="../assets/scripts/main.min.js"></script>
         
-        
+
     </body>
 </html>

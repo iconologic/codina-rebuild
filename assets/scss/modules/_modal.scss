@@ -1,0 +1,60 @@
+.modal-title, .control-label {
+	text-align: left !important;
+}
+
+.btn-clear {
+	background-color: #a3a60d !important;
+	border-color: #a3a60d !important;
+}
+
+.btn-send {
+	background-color: #0d7c86 !important;
+	border-color: #0d7c86 !important;
+}
+
+.btn-send, .btn-clear {
+	opacity: 1;
+	border-radius: 0;
+}
+
+.modal {
+	background: url('../images/bg.jpg');
+	background-size: cover;
+
+	.modal-dialog {
+		.modal-content {
+			border-radius: 0;
+			padding: 10px;
+
+			.modal-header {
+				border-bottom: 0;
+				padding-bottom: 0;
+
+				.close {
+					opacity: 1;
+					color: $codina-blue;
+				}
+			}
+
+			.modal-body {
+				.control-label {
+					padding-left: 0;
+					color: $codina-blue;
+					font-size: 14px;
+					font-weight: normal;
+					margin-bottom: 5px;
+				}
+
+				.form-control {
+					border-radius: 0;
+					border: 1px solid $codina-blue;
+				}
+			}
+
+			.modal-footer {
+				border-top: 0;
+				padding-top: 0;
+			}
+		}
+	}
+}

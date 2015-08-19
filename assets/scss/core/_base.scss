@@ -4,20 +4,66 @@
 
 // Typography
 h1 {
-	font-size: 2.2em;
+	font-size: 1.5em;
 }
 
 h2 { 
-	font-size: 1.6em;
+	font-size: 1.25em;
 }
 
 h3 { 
-	font-size: 1.3em;
+	font-size: 1.15em;
 	color: $codina-gray;
 	text-transform: uppercase;
 	margin-top: 0;
 }
 
+// Responsive Text
+
+@media (min-width: $screen-sm) {
+	h1 {
+		font-size: 2.2em;
+	}	
+
+	h2 {
+		font-size: 1.6em;
+	}
+
+	h3 {
+		font-size: 1.3em;
+	}
+}
+
+@media (min-width: $screen-md) {
+	h1 {
+		font-size: 2.2em;
+	}
+
+	h2 {
+		font-size: 1.6em;
+	}
+
+	h3 {
+		font-size: 1.3em;
+	}
+}
+
+@media (min-width: $screen-lg) {
+	h1 {
+		font-size: 2.2em;
+	}
+
+	h2 {
+		font-size: 1.6em;
+	}
+
+	h3 {
+		font-size: 1.3em;
+	}
+}
+
+
+// MISC
 .contact-info {
 	color: #fff;
 	padding-right: 36px;

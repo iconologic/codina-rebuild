@@ -8,7 +8,7 @@
 
         <meta name="viewport" content="width=device-width">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-        
+
         <!-- Styles -->
         <link href="../assets/css/main.min.css" rel="stylesheet" type="text/css" media="all" />
         <!-- Style block allowing child pages to inject their own styles -->
@@ -16,13 +16,17 @@
     </head>
     <body>
         <div id="wrapper">
-            
+
             <!-- Content block, child page inject content -->
             
 <div class="container">
 	<div class="wrapper-main shadow">
 		<!-- HEADER -->
 		<div class="container-header">
+	<!-- hamburger -->
+	<div id="hamburger" class="visible-xs">
+		<i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+	</div>
 	<!-- logo -->
 	<div class="logo">
 		<a href="../index.html">
@@ -33,7 +37,7 @@
 		<!-- MAIN -->
 		<div class="container-main">
 			<!-- SIDEBAR -->
-			<div class="col-sm-3">
+			<div id="navDesktop" class="col-sm-3">
 				<!-- <ul class="main-sidebar-nav">
 	<li>home</li>
 	<li>projects</li>
@@ -42,8 +46,6 @@
 </ul> -->
 
 <div class="nav-side-menu">
-
-  <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
 
 	<div class="menu-list">
 	  <ul id="menu-content" class="menu-content collapse navbar-collapse">
@@ -54,7 +56,7 @@
 			<li><a href="#">Contact</a></li>
 	  </ul>
 
-	  <p class="contact-info text-right">
+	  <p class="contact-info text-right hidden-xs">
 	  	135 San Lorenzo Ave
 	  	<br>Suite 750
 	  	<br>Coral Gables, FL 33146
@@ -64,7 +66,6 @@
 	  </p>
 
 	</div>
-
 
 </div>
 
@@ -77,8 +78,9 @@
 						<img src="http://placehold.it/1920x500" class="img-responsive">
 					</header>
 					<div class="container-content">
-						<h2>The right properties. The right time. The right partner.</h2>
-						<p>You can find Codina Partners all over South Florida. Visit some of our proudest success stories here.</p>
+						<h1>The right properties. The right time. The right partner.</h1>
+						<p>Codina Partners is and has been involved in the development of diversified quality projects for over twenty years. Visit some of our proudest success stories here. </p>
+						<h2>Current Projects</h2>						
 						<!-- Downtown Doral -->
 						<div class="row img-content">
 							<div class="col-sm-4">
@@ -99,11 +101,12 @@
 								</a>
 							</div>
 							<div class="col-sm-8">
-								<h3>Monterra</h3>
-								<p>Truly "Something Special" in Cooper City, Florida &mdash; a masterplanned community featuring 1,500 residential units that rambles over 500 acres in one of the most live-friendly corners of Broward County.</p>
+								<h3>2020 Salzedo</h3>
+								<p>A sixteen story luxury high-rise apartment community, 2020 Salzedo has started construction. The property offers a superior location in downtown Coral Gables, which has ten million square feet of offices, as well as shops and restaurants. Additionally, the area boasts close proximity to central Miami, Coconut Grove, and South Miami, as well as Miami International Airport and the University of Miami.</p>
 							</div>
 						</div>
-						<!-- Yellow Bluff Landing -->
+						<h2>Completed Projects</h2>
+						<!-- Museum Tower -->
 						<div class="row img-content">
 							<div class="col-sm-4">
 								<a href="../projects/detail.html">
@@ -111,12 +114,54 @@
 								</a>
 							</div>
 							<div class="col-sm-8">
-								<h3>Yellow Bluff Landing</h3>
-								<p>680-residence haven in Jacksonville, Florida featuring a variety of homes from some of the region's most experienced and sought-after builders, including D.R. Horton, Richmond American Homes and Lennar.</p>
+								<h3>Museum Tower</h3>
+								<p>The first high rise building developed in downtown Miami with a planned metro rail station as a critical component of the design. Project is a great example of a public/private partnership.</p>
+								<p class="text-center">Completed: 1990</p>
 							</div>
 						</div>
+						<!-- Baptist Hospital -->
+						<div class="row img-content">
+							<div class="col-sm-4">
+								<a href="../projects/detail.html">
+									<img src="http://placehold.it/200x150" class="img-responsive">
+								</a>
+							</div>
+							<div class="col-sm-8">
+								<h3>Baptist Hospital</h3>
+								<p>A 10-story office complex located on the Baptist Hospital Campus in Kendall.  Contains 128,740 square feet of space for staff physicians, including a physical rehabilitation center.</p>
+								<p class="text-center">Completed: 1994</p>
+							</div>
+						</div>
+						<!-- Beacon Centre -->
+						<div class="row img-content">
+							<div class="col-sm-4">
+								<a href="../projects/detail.html">
+									<img src="http://placehold.it/200x150" class="img-responsive">
+								</a>
+							</div>
+							<div class="col-sm-8">
+								<h3>Beacon Centre</h3>
+								<p>Launched in 1989, this 205 acre, mixed use business park is located just west of Miami International Airport and contains more than 2,208,865 square feet of industrial/distribution leasable area.</p>
+								<p class="text-center">Completed: 1998</p>
+							</div>
+							<a href="../projects/completed.html">> View Completed Projects</a>
+						</div>
+						<h1>Affiliated Projects</h1>
+						<div class="col-sm-6">
+							<h2>Current</h2>
+							<ul class="list-unstyled">
+								<li><a href="www.bonterrafl.com" title="">Bonterra</a></li>
+							</ul>
+						</div>
+						<div class="col-sm-6">
+							<h2>Completed</h2>
+							<ul class="list-unstyled">
+								<li><a href="www.monterrafl.com">Monterra</a></li>
+							</ul>
+						</div>
 					</div>
-					<div class="copyright">
+					<!-- TODO: Mobile Copyright -->
+<div class="copyright hidden-xs">
 	<p>Copyright <span id="year"></span> Codina Partners. All rights reserved.</p>
 </div>
 				</div> <!-- /wrapper-content -->
@@ -130,8 +175,9 @@
         <!-- Script block allowing child pages to inject their own scripts -->
         <script src="../assets/scripts/jquery.min.js"></script>
         <script src="../assets/scripts/bootstrap.min.js"></script>
+        <script src="../assets/scripts/nav.min.js"></script>
         <script src="../assets/scripts/main.min.js"></script>
         
-        
+
     </body>
 </html>

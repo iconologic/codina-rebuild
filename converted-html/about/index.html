@@ -8,7 +8,7 @@
 
         <meta name="viewport" content="width=device-width">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-        
+
         <!-- Styles -->
         <link href="../assets/css/main.min.css" rel="stylesheet" type="text/css" media="all" />
         <!-- Style block allowing child pages to inject their own styles -->
@@ -16,13 +16,17 @@
     </head>
     <body>
         <div id="wrapper">
-            
+
             <!-- Content block, child page inject content -->
             
 <div class="container">
 	<div class="wrapper-main shadow">
 		<!-- HEADER -->
 		<div class="container-header">
+	<!-- hamburger -->
+	<div id="hamburger" class="visible-xs">
+		<i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+	</div>
 	<!-- logo -->
 	<div class="logo">
 		<a href="../index.html">
@@ -33,7 +37,7 @@
 		<!-- MAIN -->
 		<div class="container-main">
 			<!-- SIDEBAR -->
-			<div class="col-sm-3">
+			<div id="navDesktop" class="col-sm-3">
 				<!-- <ul class="main-sidebar-nav">
 	<li>home</li>
 	<li>projects</li>
@@ -42,8 +46,6 @@
 </ul> -->
 
 <div class="nav-side-menu">
-
-  <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
 
 	<div class="menu-list">
 	  <ul id="menu-content" class="menu-content collapse navbar-collapse">
@@ -54,7 +56,7 @@
 			<li><a href="#">Contact</a></li>
 	  </ul>
 
-	  <p class="contact-info text-right">
+	  <p class="contact-info text-right hidden-xs">
 	  	135 San Lorenzo Ave
 	  	<br>Suite 750
 	  	<br>Coral Gables, FL 33146
@@ -64,7 +66,6 @@
 	  </p>
 
 	</div>
-
 
 </div>
 
@@ -81,7 +82,8 @@
 						<p>Codina Partners is a boutique investment and development firm formed by the Codina family in January 2010. Privately owned, with decades of local experience, a legacy of successul South Florida connection and a dedication to the development and success of the souther region of the Sunshine State, our expertise as a small, agile firm with big insight makes us one of Florida's firms to watch &mdash; the right people, the right properties, at the right time.</p>
 						<p><a href="../contact/index.html">Contact us</a>, read about our projects, and get to know our partners, then join us. It's a great time to be an investor.</p>
 					</div>
-					<div class="copyright">
+					<!-- TODO: Mobile Copyright -->
+<div class="copyright hidden-xs">
 	<p>Copyright <span id="year"></span> Codina Partners. All rights reserved.</p>
 </div>
 				</div> <!-- /wrapper-content -->
@@ -95,8 +97,9 @@
         <!-- Script block allowing child pages to inject their own scripts -->
         <script src="../assets/scripts/jquery.min.js"></script>
         <script src="../assets/scripts/bootstrap.min.js"></script>
+        <script src="../assets/scripts/nav.min.js"></script>
         <script src="../assets/scripts/main.min.js"></script>
         
-        
+
     </body>
 </html>
